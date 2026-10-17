@@ -1,0 +1,303 @@
+.mds-bounty-engine-admin {
+    max-width: 1280px;
+}
+
+.mds-bounty-engine-hero {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    margin: 18px 0;
+}
+
+.mds-bounty-engine-hero h1 {
+    color: var(--mds3-admin-text, #1d2327);
+    margin: 0;
+}
+
+.mds-bounty-engine-panel h2,
+.mds-bounty-engine-claims h3 {
+    color: var(--mds3-admin-text, #1d2327);
+}
+
+.mds-bounty-engine-hero p {
+    color: var(--mds3-admin-muted, #646970);
+    font-size: 15px;
+    margin: 8px 0 0;
+    max-width: 720px;
+}
+
+.mds-bounty-engine-hero code {
+    background: var(--mds3-admin-surface, #ffffff);
+    border: 1px solid var(--mds3-admin-border, #dcdcde);
+    border-radius: 6px;
+    color: var(--mds3-admin-text, #1d2327);
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    padding: 10px 12px;
+    white-space: normal;
+}
+
+.mds-bounty-engine-eyebrow {
+    color: var(--mds3-admin-accent, #2563eb) !important;
+    font-size: 12px !important;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin: 0 0 8px !important;
+    text-transform: uppercase;
+}
+
+.mds-bounty-engine-tabs {
+    margin: 0 0 16px;
+}
+
+.mds-bounty-engine-layout {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: minmax(240px, 0.72fr) minmax(360px, 1.28fr);
+}
+
+.mds-bounty-engine-panel {
+    background: var(--mds3-admin-surface, #ffffff);
+    border: 1px solid var(--mds3-admin-border, #dcdcde);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.mds-bounty-engine-wide {
+    margin-top: 16px;
+}
+
+.mds-bounty-engine-list {
+    display: grid;
+    gap: 10px;
+}
+
+.mds-bounty-engine-list-item {
+    background: var(--mds3-admin-surface-subtle, #f6f7f7);
+    border: 1px solid var(--mds3-admin-border, #dcdcde);
+    border-radius: 8px;
+    color: var(--mds3-admin-text, #1d2327);
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.mds-bounty-engine-list-item.is-selected {
+    border-color: var(--mds3-admin-accent, #2563eb);
+    box-shadow: inset 3px 0 0 var(--mds3-admin-accent, #2563eb);
+}
+
+.mds-bounty-engine-list-item span {
+    color: var(--mds3-admin-muted, #646970);
+    display: block;
+    margin-top: 4px;
+}
+
+.mds-bounty-engine-form {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mds-bounty-engine-form .submit,
+.mds-bounty-engine-field-wide,
+.mds-bounty-engine-note {
+    grid-column: 1 / -1;
+}
+
+.mds-bounty-engine-field {
+    display: grid;
+    gap: 6px;
+}
+
+.mds-bounty-engine-field span,
+.mds-bounty-engine-check span {
+    color: var(--mds3-admin-text, #1d2327);
+    font-weight: 600;
+}
+
+.mds-bounty-engine-field-help {
+    color: var(--mds3-admin-muted, #646970);
+    font-size: 12px;
+    line-height: 1.45;
+    margin: -2px 0 0;
+}
+
+.mds-bounty-engine-field input,
+.mds-bounty-engine-field select,
+.mds-bounty-engine-field textarea {
+    max-width: 100%;
+    width: 100%;
+}
+
+.mds-bounty-engine-field input[readonly] {
+    background: var(--mds3-admin-surface-subtle, #f6f7f7);
+}
+
+.mds-bounty-engine-check {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.mds-bounty-engine-check input[type="checkbox"] {
+    flex: 0 0 16px;
+    height: 16px;
+    margin: 0;
+    min-height: 16px;
+    width: 16px;
+}
+
+.mds-bounty-engine-note {
+    background: var(--mds3-admin-surface-subtle, #f6f7f7);
+    border: 1px solid var(--mds3-admin-border, #dcdcde);
+    border-radius: 6px;
+    color: var(--mds3-admin-muted, #50575e);
+    margin: 0;
+    padding: 10px 12px;
+}
+
+.mds-bounty-engine-submissions {
+    display: grid;
+    gap: 12px;
+}
+
+.mds-bounty-engine-submissions article {
+    align-items: center;
+    background: var(--mds3-admin-surface-subtle, #f6f7f7);
+    border: 1px solid var(--mds3-admin-border, #dcdcde);
+    border-radius: 8px;
+    display: grid;
+    gap: 14px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 14px;
+}
+
+.mds-bounty-engine-claims {
+    border-top: 1px solid var(--mds3-admin-border, #dcdcde);
+    display: grid;
+    gap: 10px;
+    grid-column: 1 / -1;
+    padding-top: 12px;
+}
+
+.mds-bounty-engine-claims > div {
+    border-left: 3px solid var(--mds3-admin-border-strong, #8c8f94);
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    padding: 2px 0 2px 12px;
+}
+
+.mds-bounty-engine-claims h3,
+.mds-bounty-engine-claim-limit {
+    margin: 0;
+}
+
+.mds-bounty-engine-claims .mds-bounty-engine-actions {
+    justify-content: flex-start;
+}
+
+.mds-bounty-engine-submissions span {
+    color: var(--mds3-admin-muted, #646970);
+    display: block;
+    margin-top: 4px;
+}
+
+.mds-bounty-engine-submissions p {
+    margin-bottom: 0;
+}
+
+.mds-bounty-engine-actions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.mds-bounty-engine-actions form {
+    margin: 0;
+}
+
+.mds-bounty-engine-pagination {
+    align-items: center;
+    color: var(--mds3-admin-muted, #50575e);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.mds-bounty-engine-admin .notice-success {
+    background: #ecfdf3;
+    border-color: #15803d;
+    color: #14532d;
+}
+
+.mds-bounty-engine-admin .notice-error {
+    background: #fff1f2;
+    border-color: #be123c;
+    color: #881337;
+}
+
+body.mds3-admin-theme-dark .mds-bounty-engine-admin .notice-success {
+    background: #12351f;
+    border-color: #4ade80;
+    color: #dcfce7;
+}
+
+body.mds3-admin-theme-dark .mds-bounty-engine-admin .notice-error {
+    background: #451a25;
+    border-color: #fb7185;
+    color: #ffe4e6;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.mds3-admin-theme-system .mds-bounty-engine-admin .notice-success {
+        background: #12351f;
+        border-color: #4ade80;
+        color: #dcfce7;
+    }
+
+    body.mds3-admin-theme-system .mds-bounty-engine-admin .notice-error {
+        background: #451a25;
+        border-color: #fb7185;
+        color: #ffe4e6;
+    }
+}
+
+.mds-bounty-engine-admin .button-primary {
+    background: var(--mds3-admin-accent, #2563eb);
+    border-color: var(--mds3-admin-accent-strong, #1d4ed8);
+}
+
+.mds-bounty-engine-admin .button-primary:hover,
+.mds-bounty-engine-admin .button-primary:focus {
+    background: var(--mds3-admin-accent-strong, #1d4ed8);
+    border-color: var(--mds3-admin-accent-strong, #1d4ed8);
+}
+
+@media (max-width: 782px) {
+    .mds-bounty-engine-submissions article,
+    .mds-bounty-engine-claims > div {
+        align-items: stretch;
+        grid-template-columns: 1fr;
+    }
+
+    .mds-bounty-engine-hero {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .mds-bounty-engine-layout,
+    .mds-bounty-engine-form {
+        grid-template-columns: 1fr;
+    }
+
+    .mds-bounty-engine-actions {
+        justify-content: flex-start;
+    }
+}

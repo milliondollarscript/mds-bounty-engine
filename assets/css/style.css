@@ -1,0 +1,286 @@
+.mds-bounty-engine {
+    --mds-bounty-engine-bg: #ffffff;
+    --mds-bounty-engine-panel: #f8fafc;
+    --mds-bounty-engine-border: #d7dde5;
+    --mds-bounty-engine-text: #111827;
+    --mds-bounty-engine-muted: #4b5563;
+    --mds-bounty-engine-accent: #2563eb;
+    background: var(--mds-bounty-engine-bg);
+    border: 1px solid var(--mds-bounty-engine-border);
+    border-radius: 8px;
+    color: var(--mds-bounty-engine-text);
+    margin: 24px 0;
+    padding: clamp(18px, 4vw, 32px);
+}
+
+.mds-bounty-engine,
+.mds-bounty-engine * {
+    box-sizing: border-box;
+}
+
+.mds-bounty-engine__header {
+    border-bottom: 1px solid var(--mds-bounty-engine-border);
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+}
+
+.mds-bounty-engine__header span {
+    color: var(--mds-bounty-engine-accent);
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.mds-bounty-engine__header h2 {
+    color: var(--mds-bounty-engine-text);
+    font-size: clamp(24px, 3vw, 34px);
+    line-height: 1.12;
+    margin: 0;
+}
+
+.mds-bounty-engine__header p,
+.mds-bounty-engine__header small {
+    color: var(--mds-bounty-engine-muted);
+    display: block;
+    margin: 10px 0 0;
+    max-width: 760px;
+}
+
+.mds-bounty-engine__summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.mds-bounty-engine__summary span {
+    background: var(--mds-bounty-engine-panel);
+    border: 1px solid var(--mds-bounty-engine-border);
+    border-radius: 999px;
+    color: var(--mds-bounty-engine-muted);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+.mds-bounty-engine__grid {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.mds-bounty-engine__card {
+    background: var(--mds-bounty-engine-panel);
+    border: 1px solid var(--mds-bounty-engine-border);
+    border-radius: 8px;
+    display: grid;
+    gap: 14px;
+    padding: 16px;
+}
+
+.mds-bounty-engine__card.is-featured {
+    border-color: var(--mds-bounty-engine-accent);
+    box-shadow: inset 3px 0 0 var(--mds-bounty-engine-accent);
+}
+
+.mds-bounty-engine__card.is-completed {
+    background: #ffffff;
+}
+
+.mds-bounty-engine__card img {
+    background: var(--mds-bounty-engine-bg);
+    border: 1px solid var(--mds-bounty-engine-border);
+    border-radius: 6px;
+    display: block;
+    height: 120px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.mds-bounty-engine__card h3 {
+    color: var(--mds-bounty-engine-text);
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 8px 0;
+}
+
+.mds-bounty-engine__card p {
+    color: var(--mds-bounty-engine-muted);
+    margin: 0 0 12px;
+}
+
+.mds-bounty-engine__card a {
+    color: var(--mds-bounty-engine-accent);
+    font-weight: 700;
+}
+
+.mds-bounty-engine__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.mds-bounty-engine__meta span {
+    background: var(--mds-bounty-engine-bg);
+    border: 1px solid var(--mds-bounty-engine-border);
+    border-radius: 999px;
+    color: var(--mds-bounty-engine-muted);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 8px;
+}
+
+.mds-bounty-engine__empty {
+    color: var(--mds-bounty-engine-muted);
+    margin: 16px 0 0;
+}
+
+.mds-bounty-engine__submit {
+    border-top: 1px solid var(--mds-bounty-engine-border);
+    margin-top: 20px;
+    padding-top: 14px;
+}
+
+.mds-bounty-engine__submit summary {
+    color: var(--mds-bounty-engine-accent);
+    cursor: pointer;
+    font-weight: 700;
+    min-height: 44px;
+}
+
+.mds-bounty-engine__form-note {
+    color: var(--mds-bounty-engine-muted);
+    margin: 4px 0 0;
+}
+
+.mds-bounty-engine__submit form {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 12px;
+}
+
+.mds-bounty-engine__submit label {
+    display: grid;
+    gap: 5px;
+}
+
+.mds-bounty-engine__submit label span,
+.mds-bounty-engine__terms {
+    color: var(--mds-bounty-engine-muted);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.mds-bounty-engine__price {
+    color: var(--mds-bounty-engine-muted);
+    font-weight: 700;
+    margin: 0;
+}
+
+.mds-bounty-engine__submit input,
+.mds-bounty-engine__submit textarea {
+    background: var(--mds-bounty-engine-bg) !important;
+    border: 1px solid var(--mds-bounty-engine-border) !important;
+    border-radius: 6px;
+    color: var(--mds-bounty-engine-text) !important;
+    min-height: 44px;
+    padding: 9px 10px;
+    width: 100%;
+}
+
+.mds-bounty-engine__wide,
+.mds-bounty-engine__check,
+.mds-bounty-engine__terms,
+.mds-bounty-engine__price,
+.mds-bounty-engine__submit button,
+.mds-bounty-engine__notice {
+    grid-column: 1 / -1;
+}
+
+.mds-bounty-engine__check {
+    align-items: center;
+    display: flex !important;
+    gap: 8px;
+}
+
+.mds-bounty-engine__check input {
+    flex: 0 0 18px;
+    height: 18px;
+    margin: 0;
+    min-height: 0;
+    width: 18px;
+}
+
+.mds-bounty-engine__submit button {
+    background: var(--mds-bounty-engine-accent);
+    border: 1px solid var(--mds-bounty-engine-accent);
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 700;
+    min-height: 44px;
+    padding: 11px 14px;
+}
+
+.mds-bounty-engine__notice {
+    background: var(--mds-bounty-engine-panel);
+    border: 1px solid var(--mds-bounty-engine-border);
+    border-radius: 6px;
+    color: var(--mds-bounty-engine-text);
+    padding: 10px 12px;
+}
+
+.mds-bounty-engine__notice--success {
+    background: #ecfdf3;
+    border-color: #15803d;
+    color: #14532d;
+}
+
+.mds-bounty-engine__notice--error {
+    background: #fff1f2;
+    border-color: #be123c;
+    color: #881337;
+}
+
+.mds-bounty-engine__pagination {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.mds-bounty-engine__pagination a,
+.mds-bounty-engine__pagination span {
+    border: 1px solid var(--mds-bounty-engine-border);
+    border-radius: 6px;
+    color: var(--mds-bounty-engine-text);
+    padding: 8px 12px;
+}
+
+.mds-bounty-engine__pagination a {
+    background: var(--mds-bounty-engine-accent);
+    border-color: var(--mds-bounty-engine-accent);
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.mds-bounty-engine__trap {
+    display: none !important;
+}
+
+.mds-bounty-engine__claim-form {
+    margin-top: 8px;
+}
+
+@media (max-width: 640px) {
+    .mds-bounty-engine__submit form {
+        grid-template-columns: 1fr;
+    }
+}
