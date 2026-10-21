@@ -3,7 +3,7 @@
  * Plugin Name: Million Dollar Script - Bounty Engine
  * Plugin URI: https://milliondollarscript.com/extensions/bounty-engine
  * Description: Run public bounty and request boards with paid/featured posting fees, submissions, and no-escrow moderation workflows.
- * Version: 0.2.0
+ * Version: 0.2.1
  * Author: Million Dollar Script
  * Author URI: https://milliondollarscript.com
  * Text Domain: mds-bounty-engine

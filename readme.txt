@@ -4,7 +4,7 @@ Tags: million dollar script, bounty engine, sponsorship, paid placement, request
 Requires at least: 6.0
 Tested up to: 7.1.3
 Requires PHP: 8.1
-Stable tag: 0.2.0
+Stable tag: 0.2.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -21,6 +21,9 @@ Public submissions require explicit terms acceptance and are checked against boa
 The MVP does not include escrow, payouts, or custody of funds. Rewards, invoices, refunds, and delivery terms are handled directly by the parties unless the site owner provides separate terms.
 
 == Changelog ==
+
+= 0.2.1 =
+* Tested with WordPress 7.1.3 and WooCommerce 11.2.1, and the plugin states the exact versions it was tested with, so WordPress and WooCommerce no longer report it as untested on a current site.
 
 = 0.2.0 =
 * Added atomic capacity enforcement, strict lifecycle validation, explicit terms acceptance, checkout failure handling, pagination, privacy retention, email notifications, and accessible semantic status styles.
