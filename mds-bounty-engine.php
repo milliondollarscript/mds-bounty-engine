@@ -36,7 +36,7 @@ if (!defined('ABSPATH')) {
 }
 
 if (!defined('MDS_BOUNTY_ENGINE_VERSION')) {
-    define('MDS_BOUNTY_ENGINE_VERSION', '0.2.0');
+    define('MDS_BOUNTY_ENGINE_VERSION', '0.2.1');
 }
 
 if (!defined('MDS_BOUNTY_ENGINE_FILE')) {
